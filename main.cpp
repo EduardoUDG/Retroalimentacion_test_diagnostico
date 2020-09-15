@@ -28,7 +28,7 @@ int main(){
 		cout<<"\t.:Menu:.\n";
 		cout<<"1. Captura cinco numeros en un arreglo \n";
 		cout<<"2. Mostrar Arreglo de caracteres\n";
-		cout<<"3. Declara 5 personajes con sus Atributos \n";
+		cout<<"3. Declara 3 personajes con sus Atributos \n";
 		cout<<"4. Salir \n";
 		cout<<"\nDigita la opcion: "; 
 		cin>>opcion;
@@ -102,7 +102,7 @@ void mostrarArreglo(int n, char arreglo2[]){
 void estructuraPersonaje(){
 	cout<<"\n.:Ingresa los datos de los Personajes:.\n";
 	
-	for(int i=0;i<5;i++){
+	for(int i=0;i<3;i++){
 		fflush(stdin);
 		cout<<"Personaje "<<i+1<<endl;
 		cout<<"Nombre: ";
@@ -117,7 +117,7 @@ void estructuraPersonaje(){
 	}
 	
 	cout<<"\n.:Imprimiendo personajes:.\n";
-	for(int i=0;i<5;i++){
+	for(int i=0;i<3;i++){
 		cout<<"Personaje "<<i+1<<endl;
 		cout<<personajes[i].nombre<<endl;
 		cout<<personajes[i].tipo<<endl;
