@@ -107,23 +107,25 @@ void estructuraPersonaje(){
 		cout<<"Personaje "<<i+1<<endl;
 		cout<<"Nombre: ";
 		cin.getline(personajes[i].nombre,30,'\n');
+        fflush(stdin);
 		cout<<"Tipo: "; 
 		cin.getline(personajes[i].tipo,30,'\n');
+        fflush(stdin);
 		cout<<"Fuerza: "; 
 		cin>>personajes[i].fuerza;
 		cout<<"Salud: "; 
 		cin>>personajes[i].salud;
-		cout<<"\n";
+        cout<<"\n";
 	}
-	
-	cout<<"\n.:Imprimiendo personajes:.\n";
-	for(int i=0;i<3;i++){
-		cout<<"Personaje "<<i+1<<endl;
-		cout<<personajes[i].nombre<<endl;
-		cout<<personajes[i].tipo<<endl;
-		cout<<personajes[i].fuerza<<endl;
-		cout<<personajes[i].salud<<endl;
-		cout<<"\n";
-	}
+
+	cout<<"\n.:Personaje agregado:.\n";
+	    for(int j=0;j<3;j++){
+		    cout<<"Personaje "<<j+1<<endl;
+		    cout<<personajes[j].nombre<<endl;
+		    cout<<personajes[j].tipo<<endl;
+		    cout<<personajes[j].fuerza<<endl;
+		    cout<<personajes[j].salud<<endl;
+		    cout<<"\n";
+	    }
 	system("pause");
 }
